@@ -1,11 +1,10 @@
-/*----------Removing unneccessary default css--------*/
-
 :root{
     --bgcolor: #49184E;
     --fontfam: "Space Gothic", sans-serif;
     --textcolor: white;
 }
 
+/*----------Removing unneccessary default css--------*/
 *{
     padding: 0%;
     margin: 0%;
@@ -20,11 +19,16 @@ li{
     list-style-type: none
 }
 
+.flex, .flexondesktop{
+    display: flex;
+}
+
 body{
     background-color: var(--bgcolor);
     font-family: var(--fontfam);
     color: var(--textcolor);
     padding-top: 30px;
+    max-width: 90%;
 }
 
 nav{
@@ -39,7 +43,7 @@ nav{
 
 nav li{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     width: fit-content;
     align-items: center;
@@ -74,7 +78,7 @@ nav li.search input{
     outline: none;
     font-weight: 500;
     width: 270px;
-    font-size: 18px;
+    font-size: 17px;
     padding: 10px 15px;
     font-family: var(--fontfam);
     color: var(--textcolor);
@@ -84,4 +88,18 @@ nav li.search input{
 nav li.search .glyphicon-search{
     width: auto;
     height: 20px;
+}
+
+div.row .thumbnail{
+    background-color: var(--bgcolor);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+    box-shadow: 0px 4px 24px -1px rgba(184, 66, 208, 0.25);
+    backdrop-filter: blur(25px);
+    padding: 15px;
+    width: 127%;
+}
+
+div.row{
+    width: fit-content;
+    margin: auto;
 }

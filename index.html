@@ -24,17 +24,19 @@
         <div class="container-fluid">
 
             <!--======The navigation bar for desktop======-->
-            <nav>
-                <ul>
-                    <li><img src="img/opensealogo.png" alt="logo">Open Sea</li>
-                    <li class="search"><input placeholder="Search"><img src="icons/searchicon.png"></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">FAQs</a></li>
-                    <li><a href=""Contact></a></li>
-                    <li class="buy"><a href="">Buy Now</a></li>
-                </ul>
-            </nav>
+            <div class="hiddenonmobile">
+                <nav>
+                    <ul>
+                        <li><img src="img/opensealogo.png" alt="logo">Open Sea</li>
+                        <li class="search"><input placeholder="Search"><img src="icons/searchicon.png"></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href=""Contact></a></li>
+                        <li class="buy"><a href="">Buy Now</a></li>
+                    </ul>
+                </nav>
+            </div>
 
             <!--The mobile BOOTSTRAP navigation bar. I had to make it seperate.---->
             <div class="hiddenondesktop">
@@ -74,7 +76,8 @@
             <!--End of the navigations-->
 
             <main>
-                <div class="hero">
+                <div class="hero flexondesktop">
+                    <!--========The hero section=======-->
                     <div>
                         <h1>Discover , sell and explore the beautiful art of  NFTs</h1>
                         <p>
@@ -94,19 +97,22 @@
                                 <li>20m + <span>Purchase</span></li>
                             </ul>
                         </div>
-                        <div>
-                            <img src="img/hero-img.png" alt="Hero image">
-                        </div>
                     </div>
-                    <div class="bordered">
-                        <img src="img/solana.png" alt="Solana Logo">
-                        <img src="img/Binance.png" alt="Binance logo">
-                        <img src="img/bitmex.png" alt="Bitmex logo">
-                        <img src="img/coinbase.png" alt="Coinbase logo">
+
+                    <div>
+                        <img src="img/hero-img.png" alt="Hero image">
                     </div>
                 </div>
 
-                <section>
+                <div class="bordered">
+                    <img src="img/solana.png" alt="Solana Logo">
+                    <img src="img/Binance.png" alt="Binance logo">
+                    <img src="img/bitmex.png" alt="Bitmex logo">
+                    <img src="img/coinbase.png" alt="Coinbase logo">
+                </div>
+
+               
+                <div>
                     <h2>Editors pick for the week</h2>
                     <ul>
                         <li><a href="">Art</a></li>
@@ -116,75 +122,140 @@
                         <li><a href="">Craft</a></li>
                         <li><a href="">Tokens</a></li>
                     </ul>
-                    <div class="row">
+                </div>
 
-                        <div class="col-sm-4">
-                            <div class="thumbnail">
-                                <img src="" alt="">
-                                <p>Tiger swag <span>#127</span></p>
-                                <div class="flex">
-                                    <img src="" alt="">
-                                    <div>
-                                        <p>Owned by</p>
-                                        <p>Peter Paul</p>
-                                    </div>
-                                    <div>
-                                        <p>Current Bid</p>
-                                        <p>1. ETH</p>
-                                    </div>
+
+                <section>   
+                    <div class="flexondesktop">
+                        <div class="nft">
+                            <img src="img/tigerswag.png" alt="">
+                            <p>Tiger swag <span>#127</span></p>
+                            <div class="flex">
+                                <img src="img/tiger.png" alt="">
+                                <div>
+                                    <p>Owned by</p>
+                                    <p>Peter Paul</p>
                                 </div>
-                                <div class="flex">
-                                    <button>Bid Now</button>
-                                    <p><img src="icons/historyicon.png" alt="History">  View History</p>
+                                <div>
+                                    <p>Current Bid</p>
+                                    <p>1. ETH</p>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="thumbnail">
-                                <img src="" alt="">
-                                <p>Perfecto beam <span>#099</span></p>
-                                <div class="flex">
-                                    <img src="" alt="">
-                                    <div>
-                                        <p>Owned by</p>
-                                        <p>Peter Paul</p>
-                                    </div>
-                                    <div>
-                                        <p>Current Bid</p>
-                                        <p>1. ETH</p>
-                                    </div>
-                                </div>
-                                <div class="flex">
-                                    <button>Bid Now</button>
-                                    <p><img src="icons/historyicon.png" alt="History">  View History</p>
-                                </div>
+                            <div class="flex">
+                                <button>Bid Now</button>
+                                <p><img src="icons/historyicon.png" alt="History">  View History</p>
                             </div>
                         </div>
-
-                        <div class="col-sm-4">
-                            <div class="thumbnail">
-                                <img src="" alt="">
-                                <p>Tiger swag <span>#127</span></p>
-                                <div class="flex">
-                                    <img src="" alt="">
-                                    <div>
-                                        <p>Owned by</p>
-                                        <p>Peter Paul</p>
-                                    </div>
-                                    <div>
-                                        <p>Current Bid</p>
-                                        <p>1. ETH</p>
-                                    </div>
+                        
+    
+                        <div class="nft">
+                            <img src="img/perfectobeam.png" alt="">
+                            <p>Perfecto beam <span>#099</span></p>
+                            <div class="flex">
+                                <img src="img/perfecto.png" alt="">
+                                <div>
+                                    <p>Owned by</p>
+                                    <p>Kate paul</p>
                                 </div>
-                                <div class="flex">
-                                    <button>Bid Now</button>
-                                    <p><img src="icons/historyicon.png" alt="History">  View History</p>
+                                <div>
+                                    <p>Current Bid</p>
+                                    <p>1.5 ETH</p>
                                 </div>
                             </div>
+                            <div class="flex">
+                                <button>Bid Now</button>
+                                <p><img src="icons/historyicon.png" alt="History">  View History</p>
+                            </div>
                         </div>
-
+    
+                            
+                        <div class="nft">
+                            <img src="img/faceshave.png" alt="">
+                            <p>Faveshave honey <span>#09</span></p>
+                            <div class="flex">
+                                <img src="img/faceshavehoney.png" alt="">
+                                <div>
+                                    <p>Owned by</p>
+                                    <p>Joan kid</p>
+                                </div>
+                                <div>
+                                    <p>Current Bid</p>
+                                    <p>5 ETH</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <button>Bid Now</button>
+                                <p><img src="icons/historyicon.png" alt="History">  View History</p>
+                            </div>
+                        </div>
                     </div>
+
+
+                    <div class="flexondesktop">
+                        <div class="nft">
+                            <img src="img/neworleans.png" alt="">
+                            <p>New orleans kid <span>#700</span></p>
+                            <div class="flex">
+                                <img src="img/new.png" alt="">
+                                <div>
+                                    <p>Owned by</p>
+                                    <p>Karl max</p>
+                                </div>
+                                <div>
+                                    <p>Current Bid</p>
+                                    <p>1. ETH</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <button>Bid Now</button>
+                                <p><img src="icons/historyicon.png" alt="History">  View History</p>
+                            </div>
+                        </div>
+                        
+    
+                        <div class="nft">
+                            <img src="img/homicidepig.png" alt="">
+                            <p>Homicide pig <span>#059</span></p>
+                            <div class="flex">
+                                <img src="img/homicide.png" alt="">
+                                <div>
+                                    <p>Owned by</p>
+                                    <p>Ellla sun</p>
+                                </div>
+                                <div>
+                                    <p>Current Bid</p>
+                                    <p>2 ETH</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <button>Bid Now</button>
+                                <p><img src="icons/historyicon.png" alt="History">  View History</p>
+                            </div>
+                        </div>
+    
+                            
+                        <div class="nft">
+                            <img src="img/evertonfox.png" alt="">
+                            <p>Everton fox  <span>#800<span></p>
+                            <div class="flex">
+                                <img src="img/everton.png" alt="">
+                                <div>
+                                    <p>Owned by</p>
+                                    <p>Kole paul</p>
+                                </div>
+                                <div>
+                                    <p>Current Bid</p>
+                                    <p>1. ETH</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <button>Bid Now</button>
+                                <p><img src="icons/historyicon.png" alt="History">  View History</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button>Shop Now</button>
                 </section>
             </main>
 
